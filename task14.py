@@ -1,4 +1,4 @@
-def unique_words(book):
+def character_word_count(book):
 	file1=[]
 	for word in book:
 		file1.append(word)
@@ -21,6 +21,6 @@ def unique_words(book):
 fin1=open("Book1.txt","r")
 fin2=open("Book2.txt","r")
 fin3=open("Book3.txt","r")
-print(unique_words(fin1))
-print(unique_words(fin2))
-print(unique_words(fin3))
+print(character_word_count(fin1))
+print(character_word_count(fin2))
+print(character_word_count(fin3))
