@@ -1,11 +1,9 @@
 def unique_words(book):
 	file1=[]
 	for word in book:
-		word=word.strip()
-		word=word.split()
-		print(word)
+		file1.append(word)
 	d={}
-	for i in word:
+	for i in file1:
 	
 		if i not in d:
 			d[i]=1
