@@ -1,0 +1,26 @@
+def unique_words(book):
+	file1=[]
+	for word in book:
+		file1.append(word)
+	d={}
+	for i in file1:
+	
+		if i not in d:
+			d[i]=1
+		else:
+			d[i]=d[i]+1
+	
+	
+	return d
+
+
+
+
+
+
+fin1=open("Book1.txt","r")
+fin2=open("Book2.txt","r")
+fin3=open("Book3.txt","r")
+print(unique_words(fin1))
+print(unique_words(fin2))
+print(unique_words(fin3))
